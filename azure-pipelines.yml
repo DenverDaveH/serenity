@@ -1,5 +1,4 @@
-trigger:
-- task: HCLAppScanOnCloud@2
+ task: HCLAppScanOnCloud@2
   inputs:
     AppSecTestService: 'ASoCKeyID'
     applications: 'ab646a68-debb-4a50-8432-b9bca3cbdd14'
