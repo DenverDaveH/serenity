@@ -1,4 +1,18 @@
 trigger:
+- task: HCLAppScanOnCloud@2
+  inputs:
+    AppSecTestService: 'ASoCKeyID'
+    applications: 'ab646a68-debb-4a50-8432-b9bca3cbdd14'
+    scanname: 'Test1'
+    scantype: 'dynamic'
+    dynamicType: 'DAST'
+    scanURL: 'https://demo.testfire.net'
+    type: 'production'
+    dynamicuser: 'jsmith'
+    dynamicloginpassword: 'demo1234'
+    network: 'private'
+    dynamicpresence: '4ca85c76-70af-ec11-a99b-2818780a4811'
+    suspend: false
   - master
 
 jobs:
